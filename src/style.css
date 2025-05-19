@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a192f;
+  --color-secondary: #64ffda;
+  --color-primary-text: #ccd6f6;
+
+  --color-primary-dim: #8892b0;
+
+  --font-link: "Roboto", sans-serif;
+  --font-name: "Monoton", sans-serif;
+  --font-primary: "Nunito", sans-serif;
+  --font-sec: "Geologica", sans-serif;
+}
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
