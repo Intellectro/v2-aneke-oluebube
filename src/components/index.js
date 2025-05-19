@@ -4,6 +4,7 @@ export {default as PageScroller} from "./view/PageScroller.vue";
 
 
 export {default as Navbar} from "./tags/Navbar.vue";
+export {default as SlideDownNav} from "./tags/SlideDownNavbar.vue";
 export {default as ContentsWrapper} from "./tags/ContentsWrapper.vue";
 export {default as Banner} from "./tags/Banner.vue";
 

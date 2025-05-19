@@ -161,5 +161,6 @@ export default {
                 "The team was highly impressed with the final result and appreciated the work."
             ]
         },
-    ]
+    ],
+    isSlideNavShow: false,
 }

@@ -1,6 +1,12 @@
 <script setup>
-import { PageScreen, PageScroller, Container, Navbar, ContentsWrapper, Banner } from './components';
+import { useStore } from 'vuex';
+import { PageScreen, PageScroller, Container, Navbar, ContentsWrapper, Banner, SlideDownNav } from './components';
 import { About, Experience } from "./pages";
+import { computed } from 'vue';
+
+const store = useStore();
+
+const isSlideValue = computed(() => store.getters.isSlideCurrentValue);
 
 </script>
 
@@ -8,7 +14,8 @@ import { About, Experience } from "./pages";
 <template>
   <PageScreen>
      <PageScroller>
-         <Navbar />        
+         <Navbar v-show="!isSlideValue" />
+         <SlideDownNav v-show="isSlideValue" />
         <Container>
             <ContentsWrapper>
                 <Banner />

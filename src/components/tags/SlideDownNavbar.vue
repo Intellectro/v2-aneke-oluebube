@@ -1,20 +1,21 @@
 <script setup>
-import { computed } from "vue";
-import { useStore } from "vuex";
-import { CgMenuLeft } from "@kalimahapps/vue-icons";
-import { Button } from "..";
+import { CgMenuLeft } from '@kalimahapps/vue-icons';
+import { Button } from '..';
+import { useStore } from 'vuex';
+import { computed } from 'vue';
 
 const store = useStore();
 
 const routers = computed(() => store.getters.routesData);
 
-const handleRoute = () => {
+const handleResumeRedirect = () => {
     location.href = "/resume.pdf";
-};
+}
+
 </script>
 
 <template>
-    <div class="w-full py-8 px-5 md:px-10 lg:px-14">
+    <div class="fixed left-0 top-0 w-full py-5 px-5 md:px-10 lg:px-14 backdrop-blur-xl shadow-md z-10">
         <div class="flex items-center justify-between">
             <div class="w-[40px] h-[40px] relative z-1">
                 <svg
@@ -62,16 +63,15 @@ const handleRoute = () => {
                         }}</span>
                         <span
                             class="text-[14.5px] font-mono tracking-wide text-primary-text"
-                            >{{ data._name }}</span
-                        >
+                            >{{ data._name }}</span>
                     </a>
                 </div>
                 <CgMenuLeft
                     class="text-secondary block md:hidden font-bold text-[40px]" />
-                <Button class="hidden md:flex" text="Resume" @handleRedirect="handleRoute" />
+                <Button @handleRedirect="handleResumeRedirect" class="hidden md:flex" text="Resume" />
             </div>
         </div>
-    </div>
+    </div>    
 </template>
 
 <style scoped>

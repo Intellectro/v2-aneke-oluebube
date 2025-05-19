@@ -1,0 +1,8 @@
+#logo {
+    fill: var(--color-primary);
+}
+
+#logo:hover {
+    transform: translate(-4px, -4px);
+    transition: all 200ms linear;
+}

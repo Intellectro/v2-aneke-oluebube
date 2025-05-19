@@ -1,7 +1,7 @@
 <script setup>
     import { useMotion } from '@vueuse/motion';
     import { Button, LeftStickTag, RightStickTag } from '..';
-    import { onMounted, onUnmounted, useTemplateRef } from 'vue';
+    import { isProxy, onMounted, onUnmounted, useTemplateRef } from 'vue';
 
     const firstTextTag = useTemplateRef("firstTag");
     const secTextTag = useTemplateRef("secTag");
@@ -35,7 +35,7 @@
 
     onMounted(() => {
         refTags.forEach((_ref, index) => {
-            handleTextAnimation(_ref.value, index * 200);
+            handleTextAnimation(isProxy(_ref.value) ? _ref.value._btnRef : _ref.value, index * 200);
         });
     });
 
