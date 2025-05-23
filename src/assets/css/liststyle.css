@@ -1,0 +1,67 @@
+.scrollbar-bar {
+    --current-pos: 0%;
+    --projects-length: 0;
+    --active-tag-width: 0;
+    transition: all 500ms linear;
+}
+
+.scrollbar-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 1vmax 1vmax 1vmax 1vmax;
+    background-color: var(--color-light-primary);
+}
+
+.scrollbar-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: var(--current-pos);
+    background-color: var(--color-secondary);
+    width: 2px;
+    height: calc(100% / var(--projects-length));
+    border-radius: 1vmax 1vmax 1vmax 1vmax;
+    transition: all 500ms linear;
+}
+
+
+.list-bicon::before {
+    content: "▹";
+    position: absolute;
+    left: -1%;
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 760px) {
+    .scrollbar-bar::before {
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .key-tag-elem {
+        position: relative;
+    }
+
+    .key-tag-elem::before{
+        content: "";
+        width: var(--active-tag-width);
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--color-secondary);
+    }
+
+    .scrollbar-bar::after {
+        content: "";
+        height: 0;
+        width: 0;
+    }
+}

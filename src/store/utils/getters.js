@@ -1,6 +1,7 @@
 const routesData = state => state.routeLinks;
 const stacksDataHolder = state => state.stacksData;
-const projectsDataHolder = state => state.projectsData;
+const projectDataKeys = state => state.projectKeys;
+const projectDataContents = state => state.projectContents;
 const isSlideCurrentValue = state => state.isSlideNavShow;
 
-export {routesData, stacksDataHolder, projectsDataHolder, isSlideCurrentValue};
+export {routesData, stacksDataHolder, projectDataKeys, projectDataContents, isSlideCurrentValue};

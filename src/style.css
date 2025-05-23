@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary: #0a192f;
+  --color-light-primary: #112240;
   --color-secondary: #64ffda;
   --color-primary-text: #ccd6f6;
 
@@ -15,6 +16,10 @@
 
 * {
   @apply box-border;
+}
+
+*::selection {
+  background-color: var(--color-light-primary);
 }
 
 html {
