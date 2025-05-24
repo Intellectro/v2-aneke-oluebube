@@ -8,7 +8,7 @@ const {customStyled} = customScrollStyle();
 
 const indexKeyHolder = ref(1);
 const _listTagWidth = ref(180);
-const indexVal = ref(0);
+const indexVal = ref(1);
 
 const store = useStore();
 
