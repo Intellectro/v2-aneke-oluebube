@@ -30,3 +30,8 @@ html {
 body {
   @apply overflow-x-hidden;
 }
+
+.freeze * {
+  animation-play-state: paused !important;
+  transition: none !important;
+}

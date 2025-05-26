@@ -283,5 +283,8 @@ export default {
             image: "~/assets/images/projects/zyztemtheme.png"
         },
     ],
-    isAnimatedTracker: null
+    animationTrackers: {
+        desktopView: null,
+        phoneView: null
+    }
 }

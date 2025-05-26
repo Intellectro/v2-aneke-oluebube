@@ -2,11 +2,12 @@ const isSlider = (state, isSlider) => {
     return state.isSlideNavShow = isSlider;
 }
 
-const isAnimateMutated = (state, elem) => {
-    if (!elem) {
-        return Object.assign(state, {isAnimatedTracker: elem});
-    }
-    return state.isAnimatedTracker = elem;
+const desktopTrackMutate = (state, elem) => {
+    return Object.assign(state.animationTrackers, {desktopView: elem});
 }
 
-export {isSlider, isAnimateMutated};
+const phoneTrackMutate = (state, elem) => {
+    return Object.assign(state.animationTrackers, {phoneView: elem});
+}
+
+export {isSlider, desktopTrackMutate, phoneTrackMutate};

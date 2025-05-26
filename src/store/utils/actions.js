@@ -2,11 +2,20 @@ const isSlideNavHandler = ({commit}, isSlide) => {
     return commit("isSlider", isSlide);
 }
 
-const isAnimateTrackerHandler = ({commit}, elem) => {
-    if (elem) {
-        return commit("isAnimateMutated", elem);
+const desktopTrackHandler = ({commit}, elem) => {
+    if (!elem) {
+        commit("desktopTrackMutate", elem);
+        return;
     }
-    return commit("isAnimateMutated", null);
+    return commit("desktopTrackMutate", elem);
 }
 
-export {isSlideNavHandler, isAnimateTrackerHandler};
+const phoneTrackHandler = ({commit}, elem) => {
+    if (!elem) {
+        commit("phoneTrackMutate", elem);
+        return;
+    }
+    return commit("phoneTrackMutate", elem);
+}
+
+export {isSlideNavHandler, desktopTrackHandler, phoneTrackHandler};

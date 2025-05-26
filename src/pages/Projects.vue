@@ -7,8 +7,13 @@ import { Dermacator } from '../components';
     <div class="pt-20" id="projects">
         <div class="flex flex-col gap-y-4">
             <Dermacator _title="Some Things I've Built" _titleIndex="03."  />
-            <div class="relative grid-cols-12 items-center">
-                
+            <div class="relative flex flex-wrap items-center">
+                <div class="flex-1 w-full">
+                    
+                </div>
+                <div class="flex-1 w-full">
+
+                </div>
             </div>
         </div>
     </div>

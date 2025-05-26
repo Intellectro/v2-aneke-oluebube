@@ -4,5 +4,7 @@ const projectDataKeys = state => state.projectKeys;
 const projectDataContents = state => state.projectContents;
 const isSlideCurrentValue = state => state.isSlideNavShow;
 const personalProjectsHandler = state => state.personalProjects;
+const desktopRefHandler = state => state.animationTrackers.desktopView;
+const phoneRefHandler = state => state.animationTrackers.phoneView;
 
-export {routesData, stacksDataHolder, projectDataKeys, projectDataContents, isSlideCurrentValue, personalProjectsHandler};
+export {routesData, stacksDataHolder, projectDataKeys, projectDataContents, isSlideCurrentValue, personalProjectsHandler, desktopRefHandler, phoneRefHandler};
