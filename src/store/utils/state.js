@@ -190,6 +190,97 @@ export default {
             _duration: "NOV - NOV 2024",
         }
     ],
-
     isSlideNavShow: false,
+    personalProjects: [
+        {
+            id: 1,
+            _default_title: "Personal Project",
+            _title: "SUBZPAY VTU APP",
+            _content: "SUBZPAY is a VTU app that allows users to buy and sell DATA and AIRTIME, convert AIRTIME into REAL MONEY, purchase GIFT CARD, GAME CPs, E-TOKEN, and much more. I'm still actively working on it and expect to complete it soon.",
+            _langs: ["Vue", "Vuex", "Tailwindcss", "Expressjs", "MongoDb", "Ionic", "Vue-router", "Zod", "Uuid"],
+            _links: [
+                {
+                    _path: "#",
+                    _name: "Github"
+                },
+                {
+                    _path: "#",
+                    _name: "project_link"
+                }
+            ],
+            image: "~/assets/images/projects/subzpay.png"
+        },
+        {
+            id: 2,
+            _default_title: "Personal Project",
+            _title: "TECH CONNECT HUB",
+            _content: "Tech Connect is the ultimate hub for developers, engineers, and tech enthusiasts to collaborate, share knowledge, and grow their networks. Whether you're looking for job opportunities, mentorship, or a place to showcase your latest project, Tech Connect brings like-minded professionals together.",
+            _langs: ["React", "Typescript", "Tailwindcss", "Expressjs", "MongoDb", "Ionic", "React-router", "Zod"],
+            _links: [
+                {
+                    _path: "#",
+                    _name: "Github"
+                },
+                {
+                    _path: "#",
+                    _name: "project_link"
+                }
+            ],
+            image: "~/assets/images/projects/techconnect.png"
+        },
+        {
+            id: 3,
+            _default_title: "Personal Project",
+            _title: "ErrorBreak AI Debugger",
+            _content: "ErrorBreak is the ultimate debugging platform for developers. Identify, analyze, and resolve code issues effortlessly with powerful tools designed to simplify troubleshooting and speed up development. Debug smarter, not harder!.",
+            _langs: ["Vue", "Vuex", "Tailwindcss", "Expressjs", "MongoDb", "OpenAI-AI", "Vue-router", "Code-Mirror"],
+            _links: [
+                {
+                    _path: "#",
+                    _name: "Github"
+                },
+                {
+                    _path: "#",
+                    _name: "project_link"
+                }
+            ],
+            image: "~/assets/images/projects/errorbreak.png"
+        },
+        {
+            id: 4,
+            _default_title: "Personal Project",
+            _title: "Artfic NFT Holder",
+            _content: "ARTFIC is an NFT project that delivers EXCLUSIVE, VERITABLE, and UNIQUE ASSETS on the blockchain. From digital art and collectibles to utility-driven tokens, we provide a SEAMLESS and SECURE experience for both creators and collectors.",
+            _langs: ["Astro", "Tailwindcss", "Expressjs", "Bcrypt"],
+            _links: [
+                {
+                    _path: "#",
+                    _name: "Github"
+                },
+                {
+                    _path: "#",
+                    _name: "project_link"
+                }
+            ],
+            image: "~/assets/images/projects/artfic.png"
+        },
+        {
+            id: 5,
+            _default_title: "Personal Project",
+            _title: "Zyztem Theme Detector",
+            _content: "Zyztem Theme Detector [ZTD] is a lightweight tool that detects whether a user's operating system is set to light mode or dark mode. Just basic but nice.",
+            _langs: ["React", "React-Type", "Sonner", "Typescript", "Tailwindcss"],
+            _links: [
+                {
+                    _path: "#",
+                    _name: "Github"
+                },
+                {
+                    _path: "#",
+                    _name: "project_link"
+                }
+            ],
+            image: "~/assets/images/projects/zyztemtheme.png"
+        },
+    ]
 }
