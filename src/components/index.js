@@ -12,6 +12,7 @@ export {default as ExperienceKey} from "./tags/ExperienceKeys.vue";
 
 export {default as Button} from "./ui/Button.vue";
 export {default as Dermacator} from "./ui/Dermacator.vue";
+export {default as Loader} from "./ui/Loader.vue";
 
 export {default as LeftStickTag} from "./stickers/LeftStickTag.vue";
 export {default as RightStickTag} from "./stickers/RightStickTag.vue";
