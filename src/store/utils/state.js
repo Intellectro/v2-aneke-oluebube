@@ -282,5 +282,6 @@ export default {
             ],
             image: "~/assets/images/projects/zyztemtheme.png"
         },
-    ]
+    ],
+    isAnimatedTracker: null
 }
