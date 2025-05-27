@@ -9,6 +9,7 @@ export {default as ContentsWrapper} from "./tags/ContentsWrapper.vue";
 export {default as Banner} from "./tags/Banner.vue";
 export {default as ExperienceContent} from "./tags/ExperienceContent.vue";
 export {default as ExperienceKey} from "./tags/ExperienceKeys.vue";
+export {default as ProjectCard} from "./tags/ProjectCard.vue";
 
 export {default as Button} from "./ui/Button.vue";
 export {default as Dermacator} from "./ui/Dermacator.vue";

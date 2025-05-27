@@ -18,8 +18,8 @@ import { useStore } from 'vuex';
         class="fixed h-full w-full inset-0 bg-primary flex items-center justify-center">
         <svg
             class="sr-only md:not-sr-only"
-            width="700"
-            height="700"
+            width="1000"
+            height="1000"
             viewBox="0 0 387 35"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">

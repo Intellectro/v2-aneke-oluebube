@@ -195,7 +195,7 @@ export default {
         {
             id: 1,
             _default_title: "Personal Project",
-            _title: "SUBZPAY VTU APP",
+            _title: "SubzPay Vtu App",
             _content: "SUBZPAY is a VTU app that allows users to buy and sell DATA and AIRTIME, convert AIRTIME into REAL MONEY, purchase GIFT CARD, GAME CPs, E-TOKEN, and much more. I'm still actively working on it and expect to complete it soon.",
             _langs: ["Vue", "Vuex", "Tailwindcss", "Expressjs", "MongoDb", "Ionic", "Vue-router", "Zod", "Uuid"],
             _links: [
@@ -208,12 +208,12 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "~/assets/images/projects/subzpay.png"
+            image: "/src/assets/images/projects/subzpay.png"
         },
         {
             id: 2,
             _default_title: "Personal Project",
-            _title: "TECH CONNECT HUB",
+            _title: "Tech Connect Hub",
             _content: "Tech Connect is the ultimate hub for developers, engineers, and tech enthusiasts to collaborate, share knowledge, and grow their networks. Whether you're looking for job opportunities, mentorship, or a place to showcase your latest project, Tech Connect brings like-minded professionals together.",
             _langs: ["React", "Typescript", "Tailwindcss", "Expressjs", "MongoDb", "Ionic", "React-router", "Zod"],
             _links: [
@@ -226,7 +226,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "~/assets/images/projects/techconnect.png"
+            image: "/src/assets/images/projects/techconnect.png"
         },
         {
             id: 3,
@@ -244,7 +244,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "~/assets/images/projects/errorbreak.png"
+            image: "/src/assets/images/projects/errorbreak.png"
         },
         {
             id: 4,
@@ -262,7 +262,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "~/assets/images/projects/artfic.png"
+            image: "/src/assets/images/projects/artfic.png"
         },
         {
             id: 5,
@@ -280,7 +280,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "~/assets/images/projects/zyztemtheme.png"
+            image: "/src/assets/images/projects/zyztemtheme.png"
         },
     ],
     animationTrackers: {

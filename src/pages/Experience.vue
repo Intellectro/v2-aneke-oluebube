@@ -2,15 +2,13 @@
 import { useStore } from 'vuex';
 import { Dermacator, ExperienceContent, ExperienceKey } from '../components';
 import {customScrollStyle} from "~/composables/useCustomScrollStyle.js";
-import { computed, provide, ref, useTemplateRef, watch } from 'vue';
+import { computed, provide, ref, watch } from 'vue';
 
 const {customStyled} = customScrollStyle();
 
 const indexKeyHolder = ref(1);
 const _listTagWidth = ref(180);
 const indexVal = ref(1);
-
-const hovered = ref(false);
 
 const store = useStore();
 

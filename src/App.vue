@@ -25,7 +25,6 @@ import { useStore } from 'vuex';
       return;
     }
     desktopRef.value.addEventListener("animationend", pageLoadingHandler);
-
   }
 
   const visibilityHandler = () => {

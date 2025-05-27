@@ -29,6 +29,7 @@ html {
 
 body {
   @apply overflow-x-hidden;
+  cursor: url("./assets/svgs/custom-cursor-two.svg"), auto;
 }
 
 .freeze * {
