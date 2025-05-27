@@ -208,7 +208,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "/src/assets/images/projects/subzpay.png"
+            image: "/assets/projects/subzpay.png"
         },
         {
             id: 2,
@@ -226,7 +226,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "/src/assets/images/projects/techconnect.png"
+            image: "/assets/projects/techconnect.png"
         },
         {
             id: 3,
@@ -244,7 +244,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "/src/assets/images/projects/errorbreak.png"
+            image: "/assets/projects/errorbreak.png"
         },
         {
             id: 4,
@@ -262,7 +262,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "/src/assets/images/projects/artfic.png"
+            image: "/assets/projects/artfic.png"
         },
         {
             id: 5,
@@ -280,7 +280,7 @@ export default {
                     _name: "project_link"
                 }
             ],
-            image: "/src/assets/images/projects/zyztemtheme.png"
+            image: "/assets/projects/zyztemtheme.png"
         },
     ],
     animationTrackers: {
