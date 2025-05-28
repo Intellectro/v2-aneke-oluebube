@@ -17,13 +17,13 @@ useHead({
     {name: "keywords", content: "Backend-Developer, Frontend-Developer, SEO engineer, Cloud-computing"},
     {property: "og:title", content: "Dev Intellectro's Portfolio"},
     {property: "og:description", content: "I’m a Fullstack Developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering."},
-    {property: "og:image", content: "/src/assets/images/icon/devintellicon.png"},
+    {property: "og:image", content: "/android-chrome-512x512.png"},
     {property: "og:url", content: "/"},
     {property: "og:type", content: "Portfolio Website"},
     {name: "twitter:card", content: "summary_large_image"},
     {name: "twitter:title", content: "Dev Intellectro's Portfolio"},
     {name: "twitter:description", content: "I’m a Fullstack Developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering."},
-    {name: "twitter:image", content: "/src/assets/images/icon/devintellicon.png"},
+    {name: "twitter:image", content: "/android-chrome-512x512.png"},
     {name: "twitter:site", content: "@devintellectro"},
     {name: "theme-color", content: "#0a192f"}
   ]
