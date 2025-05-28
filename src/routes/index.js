@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import View from "../views/View.vue";
-import { Archive, Projects } from "../pages";
+import { Archive, Projects, NotYetDone } from "../pages";
 
 const routes = [
     {
@@ -17,6 +17,11 @@ const routes = [
         path: "/my/projects",
         name: "projects",
         component: Projects
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "underconstruction",
+        component: NotYetDone
     }
 ];
 
