@@ -286,5 +286,6 @@ export default {
     animationTrackers: {
         desktopView: null,
         phoneView: null
-    }
+    },
+    isShowSidebar: false
 }

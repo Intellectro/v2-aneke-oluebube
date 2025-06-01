@@ -18,4 +18,13 @@ const phoneTrackHandler = ({commit}, elem) => {
     return commit("phoneTrackMutate", elem);
 }
 
-export {isSlideNavHandler, desktopTrackHandler, phoneTrackHandler};
+const showSideNavbarHandler = ({commit}, value) => {
+    if (value) {
+        commit("showSideNavbar", value);
+        return;
+    }
+
+    commit("showSideNavbar", value);
+}
+
+export {isSlideNavHandler, desktopTrackHandler, phoneTrackHandler, showSideNavbarHandler};

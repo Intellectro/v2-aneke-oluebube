@@ -12,6 +12,8 @@ const handleResumeRedirect = () => {
     location.href = "/resume.pdf";
 }
 
+defineEmits(["handleSidebarToggle"]);
+
 </script>
 
 <template>
@@ -67,6 +69,7 @@ const handleResumeRedirect = () => {
                     </a>
                 </div>
                 <CgMenuLeft
+                    @click="$emit('handleSidebarToggle')"
                     class="text-secondary block md:hidden font-bold text-[40px]" />
                 <Button @handleRedirect="handleResumeRedirect" class="hidden md:flex" text="Resume" />
             </div>

@@ -1,8 +1,8 @@
 <script setup>
 import { useStore } from 'vuex';
-import { PageScreen, PageScroller, Container, Navbar, ContentsWrapper, Banner, SlideDownNav } from '../components';
+import { PageScreen, PageScroller, Container, Navbar, ContentsWrapper, Banner, SlideDownNav, SidebarNav } from '../components';
 import { About, Experience, Vprojects } from "../pages";
-import { computed } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { useHead } from '@vueuse/head';
 
 const store = useStore();
@@ -29,14 +29,19 @@ useHead({
   ]
 });
 
+const handleSidebarToggle = () => {
+  store.dispatch("showSideNavbarHandler", true);
+}
+
 </script>
 
 
 <template>
   <PageScreen>
      <PageScroller>
-         <Navbar v-show="!isSlideValue" />
-         <SlideDownNav v-show="isSlideValue" />
+         <Navbar @handleSidebarToggle="handleSidebarToggle" v-show="!isSlideValue" />
+         <SlideDownNav @handleSidebarToggle="handleSidebarToggle" v-show="isSlideValue" />
+         <SidebarNav />
         <Container>
             <ContentsWrapper>
                 <Banner />

@@ -20,7 +20,7 @@ import { useStore } from 'vuex';
   });
 
   const handleIsLoading = () => {
-    if (isPhoneView.value) {
+    if (isPhoneView.value || matchMediaHandler.matches) {
       phoneRef.value.addEventListener("animationend", pageLoadingHandler);      
       return;
     }

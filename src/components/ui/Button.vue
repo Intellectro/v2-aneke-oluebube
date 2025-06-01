@@ -1,7 +1,7 @@
 <script setup>
 import { useTemplateRef } from 'vue';
 
-    defineProps({
+    const props = defineProps({
         text: {
             type: String,
             default: ""
@@ -21,7 +21,7 @@ import { useTemplateRef } from 'vue';
 </script>
 
 <template>
-    <button @click="handleRedirect" ref="btnref" class="transparent py-[6px] px-4 rounded text-[14px] border border-secondary text-secondary font-mono">
+    <button @click="handleRedirect" ref="btnref" :class="`transparent py-[6px] px-4 rounded text-[14px] border border-secondary text-secondary font-mono`">
         {{text}}
     </button>
 </template>

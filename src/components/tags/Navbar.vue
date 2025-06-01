@@ -9,8 +9,11 @@ const store = useStore();
 const routers = computed(() => store.getters.routesData);
 
 const handleRoute = () => {
-    location.href = "/resume.pdf";
+    location.href = "/Oluebube Aneke Resume-1.pdf";
 };
+
+
+defineEmits(["handleSidebarToggle"]);
 </script>
 
 <template>
@@ -67,6 +70,7 @@ const handleRoute = () => {
                     </a>
                 </div>
                 <CgMenuLeft
+                    @click="() => $emit('handleSidebarToggle')"
                     class="text-secondary block md:hidden font-bold text-[40px]" />
                 <Button class="hidden md:flex" text="Resume" @handleRedirect="handleRoute" />
             </div>

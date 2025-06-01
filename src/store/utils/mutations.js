@@ -10,4 +10,8 @@ const phoneTrackMutate = (state, elem) => {
     return Object.assign(state.animationTrackers, {phoneView: elem});
 }
 
-export {isSlider, desktopTrackMutate, phoneTrackMutate};
+const showSideNavbar = (state, value) => {
+    return Object.assign(state, {isShowSidebar: value});
+}
+
+export {isSlider, desktopTrackMutate, phoneTrackMutate, showSideNavbar};
