@@ -1,6 +1,6 @@
 <script setup>
     import { PrTimes } from '@kalimahapps/vue-icons';
-    import { computed, onMounted, useTemplateRef } from 'vue';
+    import { computed, onMounted, onUnmounted, useTemplateRef } from 'vue';
     import { useStore } from 'vuex';
     import { Button } from '..';
 
@@ -19,7 +19,7 @@
         btnRef.value._btnRef.addEventListener("click", handleRedirect);
     });
     
-    onMounted(() => {
+    onUnmounted(() => {
         btnRef.value._btnRef.removeEventListener("click", handleRedirect);
     });
 
